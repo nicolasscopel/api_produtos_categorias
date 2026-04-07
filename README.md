@@ -1,7 +1,3 @@
-Perfeito 👍. Pela estrutura que você mostrou, ajustei o **README para refletir exatamente a arquitetura do seu projeto (DAO + Service + Controller)** e os diretórios corretos.
-
-Você pode colocar **direto no `README.md`** do repositório.
-
 ---
 
 # API de Produtos, Categorias e Usuários
