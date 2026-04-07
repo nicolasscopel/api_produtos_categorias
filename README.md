@@ -20,6 +20,7 @@ A API permite:
 * Registrar **usuários**
 * Realizar **autenticação via JWT**
 * Consultar **produtos de uma categoria**
+  
 
 ---
 
@@ -64,8 +65,7 @@ Certifique-se de possuir instalado:
 # 1️⃣ Clonar o Repositório
 
 ```bash
-git clone <url-do-repositorio>
-cd API_PRODUTOS_CATEGORIAS
+git clone <https://github.com/nicolasscopel/api_produtos_categorias.git>
 ```
 
 ---
@@ -286,11 +286,3 @@ Authorization: Bearer <seu_token>
 
 ---
 
-✅ Se quiser, eu também posso te entregar uma **versão ainda melhor para GitHub**, incluindo:
-
-* **diagrama do banco de dados**
-* **exemplos de JSON de requisição/resposta**
-* **badges (Node, Express, PostgreSQL, Swagger)**
-* **passo a passo de teste no Postman**
-
-Isso deixa seu README **nível projeto profissional de portfólio**.
