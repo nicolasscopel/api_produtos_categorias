@@ -4,6 +4,11 @@ const app = express();
 
 const categoriaRoutes = require("./routes/categoriaRoutes");
 const produtoRoutes = require("./routes/produtoRoutes");
+const usuarioRoutes = require("./routes/usuarioRoutes");
+
+const authRoutes = require("./routes/authRoutes");
+
+const errorHandler = require("./middlewares/errorHandler");
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
@@ -15,14 +20,17 @@ const swaggerOptions = {
     openapi: "3.0.0",
     info: {
       title: "API Produtos e Categorias",
-      version: "1.0.0",
-      description: "Documentação da API"
+      version: "1.0.0"
     },
-    servers: [
-      {
-        url: "http://localhost:3000"
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT"
+        }
       }
-    ]
+    }
   },
   apis: ["./src/routes/*.js"]
 };
@@ -30,12 +38,17 @@ const swaggerOptions = {
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 
+
+
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use("/categorias", categoriaRoutes);
 app.use("/produtos", produtoRoutes);
+app.use("/usuarios", usuarioRoutes);
+app.use("/auth", authRoutes);
+
+app.use(errorHandler);
 
 
 
-
-module.exports = app;
+module.exports = app, swaggerSpec;

@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const { authenticateToken } = require("../middlewares/authMiddleware");
+
 const produtoController = require("../controllers/produtoController");
 
 /**
@@ -99,6 +101,8 @@ router.put("/:id", produtoController.atualizarProduto);
  *   delete:
  *     summary: Deletar produto
  *     tags: [Produtos]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -109,7 +113,11 @@ router.put("/:id", produtoController.atualizarProduto);
  *     responses:
  *       200:
  *         description: Produto removido
+ *       401:
+ *         description: Token não fornecido
+ *       403:
+ *         description: Token inválido
  */
-router.delete("/:id", produtoController.deletarProduto);
+router.delete("/:id", authenticateToken, produtoController.deletarProduto);
 
 module.exports = router;
