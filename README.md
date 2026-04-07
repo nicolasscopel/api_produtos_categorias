@@ -62,7 +62,7 @@ Certifique-se de possuir instalado:
 
 ---
 
-# 1️⃣ Clonar o Repositório
+# 1️ - Clonar o Repositório
 
 ```bash
 git clone <https://github.com/nicolasscopel/api_produtos_categorias.git>
@@ -70,7 +70,7 @@ git clone <https://github.com/nicolasscopel/api_produtos_categorias.git>
 
 ---
 
-# 2️⃣ Instalar Dependências
+# 2️ - Instalar Dependências
 
 ```bash
 npm install
@@ -78,7 +78,7 @@ npm install
 
 ---
 
-# 3️⃣ Criar Banco de Dados
+# 3️ - Criar Banco de Dados
 
 Acesse o PostgreSQL:
 
@@ -94,7 +94,7 @@ CREATE DATABASE api_produtos_categorias;
 
 ---
 
-# 4️⃣ Configurar Variáveis de Ambiente
+# 4️ - Configurar Variáveis de Ambiente
 
 Crie um arquivo `.env` na raiz do projeto.
 
@@ -110,7 +110,7 @@ JWT_SECRET=123456
 
 ---
 
-# 🚀 Executar o Projeto
+# Executar o Projeto
 
 ```bash
 npm start
