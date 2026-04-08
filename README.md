@@ -2,7 +2,7 @@
 
 # API de Produtos, Categorias e Usuários
 
-## 📚 Descrição do Domínio
+## Descrição do Domínio
 
 Esta API REST foi desenvolvida para realizar o **gerenciamento de produtos e categorias**, permitindo também o controle de **usuários autenticados** que acessam o sistema.
 
@@ -10,7 +10,7 @@ O sistema simula um **controle de estoque ou catálogo de produtos**, onde os it
 
 ---
 
-# 🎯 Funcionalidades da API
+# Funcionalidades da API
 
 A API permite:
 
@@ -24,7 +24,7 @@ A API permite:
 
 ---
 
-# 🔗 Relacionamento entre Entidades
+# Relacionamento entre Entidades
 
 O sistema possui um relacionamento **1:N entre categorias e produtos**.
 
@@ -39,7 +39,7 @@ Isso significa que:
 
 ---
 
-# ⚙️ Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 * **Node.js**
 * **Express**
@@ -50,7 +50,7 @@ Isso significa que:
 
 ---
 
-# ⚙️ Instalação e Execução
+# Instalação e Execução
 
 ## Pré-requisitos
 
@@ -124,7 +124,7 @@ http://localhost:3000
 
 ---
 
-# 📖 Documentação Swagger
+# Documentação Swagger
 
 A documentação interativa da API pode ser acessada em:
 
@@ -141,9 +141,9 @@ Nela é possível:
 
 ---
 
-# 📋 Rotas da API
+# Rotas da API
 
-## 🔐 Autenticação
+## Autenticação
 
 | Método | Rota           | Descrição        |
 | ------ | -------------- | ---------------- |
@@ -152,7 +152,7 @@ Nela é possível:
 
 ---
 
-## 👤 Usuários
+## Usuários
 
 | Método | Rota      | Descrição       |
 | ------ | --------- | --------------- |
@@ -161,7 +161,7 @@ Nela é possível:
 
 ---
 
-## 📦 Produtos
+## Produtos
 
 | Método | Rota           | Descrição             |
 | ------ | -------------- | --------------------- |
@@ -173,7 +173,7 @@ Nela é possível:
 
 ---
 
-## 🗂️ Categorias
+## Categorias
 
 | Método | Rota                      | Descrição                    |
 | ------ | ------------------------- | ---------------------------- |
@@ -183,7 +183,7 @@ Nela é possível:
 
 ---
 
-# 🗂️ Estrutura do Projeto
+# Estrutura do Projeto
 
 ```
 API_PRODUTOS_CATEGORIAS
@@ -237,7 +237,7 @@ API_PRODUTOS_CATEGORIAS
 
 ---
 
-# 📊 Modelo de Dados
+# Modelo de Dados
 
 ## Tabela: categorias
 
@@ -274,7 +274,7 @@ API_PRODUTOS_CATEGORIAS
 
 ---
 
-# 🔒 Segurança
+# Segurança
 
 A API utiliza **JWT (JSON Web Token)** para autenticação.
 
